@@ -49,7 +49,7 @@ export function Routes() {
 
       {notification && (
         <Notification
-          title={notification.title || ""}
+          data={notification}
           onClose={() => setNotification(null)}
         />
       )}
