@@ -14,7 +14,7 @@ import { Loading } from "./src/components/Loading";
 
 import { CartContextProvider } from "./src/contexts/CartContext";
 
-OneSignal.initialize("410d6e05-f759-47ba-919c-345e5be88720");
+OneSignal.initialize(process.env.EXPO_PUBLIC_ONESIGNAL_APP_ID);
 OneSignal.Notifications.requestPermission(true);
 
 export default function App() {
