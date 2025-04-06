@@ -6,3 +6,11 @@ export function createUserInfoTag() {
     user_email: "felipemattoseu@gmail.com",
   });
 }
+
+export function updateCartUpdateTag(itemsCount: number) {
+  OneSignal.User.addTag("cart_update_items_count", itemsCount.toString());
+}
+
+export function removeCartUpdateTag() {
+  OneSignal.User.removeTag("cart_update_items_count");
+}
